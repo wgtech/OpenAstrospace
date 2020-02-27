@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OpenAstrospace</string>
+
+    <!-- Menu -->
+    <string name="menu_astro">Astro</string>
+    <string name="menu_nature">Nature</string>
+    <string name="menu_city">City</string>
+    <string name="menu_etc">Etc</string>
+
+    <string-array name="menu_names">
+        <item>Astro</item>
+        <item>Nature</item>
+        <item>City</item>
+        <item>Etc</item>
+    </string-array>
+
+</resources>

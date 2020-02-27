@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="project.wgtech.openastrospace.base.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/nav_action_home_astro"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_astro"
+        android:name="project.wgtech.openastrospace.astro.view.AstroFragment"
+        android:label="fragment_astro"
+        tools:layout="@layout/fragment_astro">
+        <argument
+            android:name="imageName"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>
